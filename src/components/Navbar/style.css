@@ -56,6 +56,19 @@
 .toggle{
     display: none;
 }
+.dropdown{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid  #CECECE;
+    color: #7E7E7E;
+    font-size: .8rem;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100px;
+}
 
 @media (max-width: 1024px) {
     .nav{

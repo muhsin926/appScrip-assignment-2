@@ -60,3 +60,16 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .main{
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header' 'container' ;
+  }
+  .logo{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+}

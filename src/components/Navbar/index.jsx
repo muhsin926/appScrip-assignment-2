@@ -11,7 +11,9 @@ import ToggleIcon from "../../assets/Icons/ToggleIcon";
 const Navbar = () => {
   return (
     <>
-    <div className="toggle"><ToggleIcon/></div>
+      <div className="toggle">
+        <ToggleIcon />
+      </div>
       <nav className="nav">
         {NAV_ITEMS?.map((item) => (
           <Link>{item}</Link>
@@ -28,6 +30,11 @@ const Navbar = () => {
       </div>
       <div className="mobileView">
         <div className="wrap">
+          <select className="dropdown" name="" id="">
+            {NAV_ITEMS?.map((item, i) => (
+              <option selected={i==3} value={item}>{item}</option>
+            ))}
+          </select>
           <div className="circle">MA</div>
           <h3>Account</h3>
         </div>
