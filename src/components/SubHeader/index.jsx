@@ -3,8 +3,8 @@ import style from "./style.css";
 
 const SubHeader = ({ active, handleActive }) => {
   return (
-    <div className='subContainer'>
-      <div className='titleBox'>
+    <div className="subContainer">
+      <div className="titleBox">
         <h4>Task</h4>
         <p>Clinical {">"} Tasks</p>
       </div>

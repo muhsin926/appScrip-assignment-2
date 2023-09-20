@@ -11,18 +11,22 @@ const Sidebar = () => {
     <>
       <h1 className="sidebarTitle">MedLife</h1>
       <div className="wrapper">
-      <Button
-        onClick={() => setClicked(!clicked)}
-        className="commonBtn sidebarBtn "
-      >
-        Add Clinical <DownArrow />
-      </Button>
-      {clicked && (
-        <>
-          <Button className="commonBtn appointBtn"><ClockIcon/> Appointments </Button>
-          <Button className="commonBtn taskBtn"><TaskIcon/> Tasks</Button>
-        </>
-      )}
+        <Button
+          onClick={() => setClicked(!clicked)}
+          className="commonBtn sidebarBtn "
+        >
+          Add Clinical <DownArrow />
+        </Button>
+        {clicked && (
+          <>
+            <Button className="commonBtn appointBtn">
+              <ClockIcon /> Appointments{" "}
+            </Button>
+            <Button className="commonBtn taskBtn">
+              <TaskIcon /> Tasks
+            </Button>
+          </>
+        )}
       </div>
     </>
   );

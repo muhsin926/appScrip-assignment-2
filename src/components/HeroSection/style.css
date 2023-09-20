@@ -68,71 +68,78 @@
     font-size: .8rem;
     color: #7E7E7E;
 }
-.taskSender{
+
+.taskSender {
     display: flex;
     gap: 1rem;
 }
-.taskSender h6{
+
+.taskSender h6 {
     font-size: 1rem;
     font-weight: 600;
     color: #000;
     margin: 0;
 }
-.status{
+
+.status {
     font-size: 1rem;
     font-weight: 600;
 }
-.profile{
+
+.profile {
     width: 5rem;
     height: 5rem;
     object-fit: cover;
 }
 
-.taskInfo{
+.taskInfo {
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
 
-.infoValues p{
+.infoValues p {
     color: #333;
 }
-.taskAction{
+
+.taskAction {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.actionBtn{
+.actionBtn {
     background-color: #04095A;
-     color: #fff;
-     border-radius: 8px;
-     padding: 8px 1.5rem
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 1.5rem
 }
 
 @media (max-width: 1024px) {
-    .buttons{
+    .buttons {
         flex-wrap: wrap;
         align-items: center;
     }
-    .taskCard{
+
+    .taskCard {
         flex-direction: column;
     }
 }
+
 @media (min-width: 1024px) {
     .filter {
         margin-right: 0;
         margin-left: auto;
     }
-    .taskAction{
+
+    .taskAction {
         margin-right: 0;
         margin-left: auto;
     }
 }
 
 @media (max-width: 500px) {
-    .heroContainer{
+    .heroContainer {
         padding: .5rem .5rem 0 .5rem;
     }
 }
-

@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../../Button";
 
-const TaskCard = ({task, show}) => {
+const TaskCard = ({ task, show }) => {
   return (
     <>
-     { !show && <h6 className="taskDate">{task.fromDate}</h6>}
+      {!show && <h6 className="taskDate">{task.fromDate}</h6>}
       <div className="taskCard">
         <div className="taskSender">
           <img src={task.profile} className="profile" alt="profile" />
@@ -29,20 +29,24 @@ const TaskCard = ({task, show}) => {
           </div>
         </div>
         <div className="taskAction">
-         {!show && <p>
-            Status{" "}
-            <span
-              className="status"
-              style={{
-                marginLeft: "5px",
-                color: task.status == "Overdue" ? "#F44336" : "#00B071",
-              }}
-            >
-              {task.status}
-            </span>
-          </p>}
+          {!show && (
+            <p>
+              Status{" "}
+              <span
+                className="status"
+                style={{
+                  marginLeft: "5px",
+                  color: task.status == "Overdue" ? "#F44336" : "#00B071",
+                }}
+              >
+                {task.status}
+              </span>
+            </p>
+          )}
           <Button className={"commonBtn actionBtn"}>
-            {show ? 'View Assessment' : task.status == "Overdue"
+            {show
+              ? "View Assessment"
+              : task.status == "Overdue"
               ? "Start Assessment"
               : "Continue Assessment"}
           </Button>
