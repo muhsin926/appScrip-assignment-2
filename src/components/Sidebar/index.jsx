@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Button from "../../Button";
 import DownArrow from "../../assets/Icons/DownArrow";
 import "./style.css";
+import ClockIcon from "../../assets/Icons/ClockIcon";
+import TaskIcon from "../../assets/Icons/TaskIcon";
 
 const Sidebar = () => {
   const [clicked, setClicked] = useState(false);
@@ -17,8 +19,8 @@ const Sidebar = () => {
       </Button>
       {clicked && (
         <>
-          <Button className="commonBtn appointBtn">Appointments</Button>
-          <Button className="commonBtn taskBtn">Tasks</Button>
+          <Button className="commonBtn appointBtn"><ClockIcon/> Appointments </Button>
+          <Button className="commonBtn taskBtn"><TaskIcon/> Tasks</Button>
         </>
       )}
       </div>
