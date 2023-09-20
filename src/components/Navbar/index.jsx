@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="wrap">
           <select className="dropdown" name="" id="">
             {NAV_ITEMS?.map((item, i) => (
-              <option selected={i == 3} value={item}>
+              <option key={i} selected={i == 3} value={item}>
                 {item}
               </option>
             ))}

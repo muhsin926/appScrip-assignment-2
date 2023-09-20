@@ -36,7 +36,7 @@ const HeroSection = ({ show }) => {
         </div>
         <div className="outerCard">
           {UP_COMING_TASK.map((task) => (
-            <TaskCard task={task} show={show} />
+            <TaskCard key={task.appointmentId} task={task} show={show} />
           ))}
         </div>
       </div>
