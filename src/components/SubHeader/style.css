@@ -1,0 +1,36 @@
+.subContainer{
+    padding: 1.5rem 0 0 2rem;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+.titleBox h4{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+.titleBox p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7E7E7E;
+}
+
+.subHeads{
+    display: flex;
+    gap: 2rem;
+    align-items: end;
+    /* margin-bottom: 10px; */
+}
+
+.subHeads h6{
+    font-size: .8rem;
+    font-weight: 500;
+    color: #7E7E7E;
+    padding-bottom: 10px;
+    margin: 0;
+    cursor: pointer;
+}

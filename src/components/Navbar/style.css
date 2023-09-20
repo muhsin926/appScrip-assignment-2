@@ -7,7 +7,7 @@
 .nav a{
     text-decoration: none;
     color: #7E7E7E;
-    font-size: 14px;
+    font-size: .8rem;
 }
 
 .btn{
@@ -18,6 +18,7 @@
     border: 1px solid #04095A;
     border-radius: 10px;
     background-color: transparent;
+    font-size: .8rem;
 }
 
 .right-side{
@@ -25,7 +26,7 @@
     align-items: center;
     gap: 1rem;
 }
-.profile{
+.circle{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -34,11 +35,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: .7rem;
     font-weight: 700;
 }
 
 .right-side h3{
     font-size: 14px;
     font-weight: 400;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .8rem;
+}
+
+.mobileView{
+    display: none;
+}
+.toggle{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .nav{
+        display: none;
+    }
+    .right-side{
+        display: none;
+    }
+    .mobileView{
+        display: block;
+    }
+    .toggle{
+        display: block;
+    }
 }

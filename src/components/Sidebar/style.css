@@ -4,6 +4,8 @@
   color: #FFF;
   justify-content: end;
   gap: 2.3rem;
+  font-size: .8rem;
+  font-weight: 600;
 }
 
 .wrapper{
@@ -14,6 +16,8 @@
 
 .appointBtn{
     border: none;
+    font-size: .8rem;
+    color: #7E7E7E;
 }
 
 .taskBtn{
@@ -22,4 +26,12 @@
     border-right: 3px solid #04095A ;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    color: #04095A;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.sidebarTitle{
+    font-size: 1rem;
+    margin: 1.5rem 0 1.5rem 0;
 }

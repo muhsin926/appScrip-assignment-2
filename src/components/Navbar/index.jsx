@@ -6,21 +6,31 @@ import Button from "../../Button";
 import CheckedIcon from "../../assets/Icons/CheckedIcon";
 import FAQIcon from "../../assets/Icons/FAQIcon";
 import NotificationIcon from "../../assets/Icons/NotificationIcon";
+import ToggleIcon from "../../assets/Icons/ToggleIcon";
 
 const Navbar = () => {
   return (
     <>
+    <div className="toggle"><ToggleIcon/></div>
       <nav className="nav">
         {NAV_ITEMS?.map((item) => (
           <Link>{item}</Link>
         ))}
       </nav>
       <div className="right-side">
-        <Button className={'btn'}><CheckedIcon/> Clocked-in</Button>
-        <FAQIcon/>
-        <NotificationIcon/>
-        <div className="profile">MA</div>
+        <Button className={"btn"}>
+          <CheckedIcon /> Clocked-in
+        </Button>
+        <FAQIcon />
+        <NotificationIcon />
+        <div className="circle">MA</div>
         <h3>Account</h3>
+      </div>
+      <div className="mobileView">
+        <div className="wrap">
+          <div className="circle">MA</div>
+          <h3>Account</h3>
+        </div>
       </div>
     </>
   );

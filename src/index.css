@@ -19,7 +19,6 @@
  }
 
  .header {
-   border: .5px solid #E8E8E8;
    grid-area: header;
    display: flex;
    justify-content: space-between;
@@ -40,7 +39,6 @@
  }
 
  .sidebar {
-   border: 1px solid #E8E8E8;
    grid-area: sidebar;
    padding: 0 1rem;
  }
@@ -54,8 +52,10 @@
   padding: 8px;
   display: flex;
   align-items: center;
-  gap: 3px;
-  border: 1px solid #04095A;
+  gap: .5rem;
+  border: 1px solid  #CECECE;
+  color: #7E7E7E;
+  font-size: .8rem;
   border-radius: 10px;
   background-color: transparent;
   cursor: pointer;

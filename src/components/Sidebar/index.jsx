@@ -6,10 +6,10 @@ import ClockIcon from "../../assets/Icons/ClockIcon";
 import TaskIcon from "../../assets/Icons/TaskIcon";
 
 const Sidebar = () => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(true);
   return (
     <>
-      <h1>MedLife</h1>
+      <h1 className="sidebarTitle">MedLife</h1>
       <div className="wrapper">
       <Button
         onClick={() => setClicked(!clicked)}
