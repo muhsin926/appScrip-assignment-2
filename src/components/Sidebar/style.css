@@ -1,0 +1,22 @@
+.sidebarBtn{
+  background-color: #04095A;
+  width: 100%;
+  color: #FFF;
+  justify-content: end;
+  gap: 2.3rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.appointBtn{
+    border: none;
+}
+
+.taskBtn{
+    border: none;
+    background-color: #F8FBFF;
+}

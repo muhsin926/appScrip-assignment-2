@@ -1,0 +1,44 @@
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #7E7E7E;
+    font-size: 14px;
+}
+
+.btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid #04095A;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #E5FDFB;
+    border: 1px solid #00E9D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.right-side h3{
+    font-size: 14px;
+    font-weight: 400;
+}
